@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: oldlace;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: #222;
+    border-radius: 12px;
+}
+
+.display {
+    height: 80px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+button {
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.number {
+    background-color: lightgray;
+}
+
+/*arithmetic operations*/
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+
+/* Equals */
+
+.equals {
+    background-color: #34c759;
+    color: white;
+}
+
+
+/* Clear */
+
+.clear {
+    grid-column: span 2;
+
+    background-color: #ff3b30;
+    color: white;
+}
+
+
+/* Backspace */
+
+.backspace {
+    background-color: #888;
+    color: white;
+}
+
+
+/* Decimal */
+
+.decimal {
+    background-color: #e0e0e0;
+}
+
+
+/* Zero */
+
+.zero {
+    grid-column: span 2;
+}
